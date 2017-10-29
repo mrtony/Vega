@@ -11,9 +11,10 @@ using vega.Persistence;
 namespace vega.Migrations
 {
     [DbContext(typeof(VegaDbContext))]
-    partial class VegaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171029130656_ChangeNameFieldToNotNullToMakesTable")]
+    partial class ChangeNameFieldToNotNullToMakesTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

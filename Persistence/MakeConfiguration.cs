@@ -9,7 +9,7 @@ namespace vega.Persistence
         void IEntityTypeConfiguration<Make>.Configure(EntityTypeBuilder<Make> builder)
         {
             builder.HasKey(c => c.Id);
-            builder.Property(c => c.Name).HasMaxLength(255);
+            builder.Property(c => c.Name).HasMaxLength(255).IsRequired();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace vega.Persistence
     {
         void IEntityTypeConfiguration<Model>.Configure(EntityTypeBuilder<Model> builder)
         {
-            builder.Property(c => c.Name).HasMaxLength(255);
+            builder.Property(c => c.Name).HasMaxLength(255).IsRequired();
             //Foreign Key
             builder.HasOne(c => c.Make)
             .WithMany(c => c.Models)
