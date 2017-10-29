@@ -10,8 +10,8 @@ namespace vega.Persistence
         { 
         }
 
-        DbSet<Make> Makes {get; set;}
-        DbSet<Model> Models {get; set;}
+        public DbSet<Make> Makes {get; set;}
+        public DbSet<Model> Models {get; set;}
         
         protected override void OnModelCreating(ModelBuilder builder)
         {
